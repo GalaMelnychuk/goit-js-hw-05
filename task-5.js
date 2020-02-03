@@ -1,4 +1,7 @@
+"use strict";
+
 // Напиши класс Car с указанными свойствами и методами.
+
 
 class Car {
   static getSpecs(car) {
@@ -30,6 +33,7 @@ class Car {
 
   turnOff() {
     this.isOn = false;
+    this.speed = 0;
   }
 
   accelerate(value) {
@@ -49,7 +53,7 @@ class Car {
   drive(hours) {
     this.hours = hours;
     if (this.isOn = true) {
-    this.distance = this.hours * this.speed;
+    this.distance = this.distance + this.hours * this.speed;
   }
 }
 };
